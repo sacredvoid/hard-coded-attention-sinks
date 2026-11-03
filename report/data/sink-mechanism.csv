@@ -1,0 +1,13 @@
+model,condition,accuracy,diff_vs_clean,ci_lo,ci_hi,run
+AIMv2 L/14,clean,95.0,0.0,0.0,0.0,2e1807d8-cb8c-412d-965c-4adceaf5be4e
+AIMv2 L/14,sink killed,65.0,-30.0,-33.1,-27.0,2e1807d8-cb8c-412d-965c-4adceaf5be4e
+AIMv2 L/14,"key/value restored, block 0",90.8,-4.2,-5.6,-2.8,2e1807d8-cb8c-412d-965c-4adceaf5be4e
+AIMv2 L/14,"key/value restored, all blocks",95.0,0.0,0.0,0.0,2e1807d8-cb8c-412d-965c-4adceaf5be4e
+AIMv2 L/14,query restored (control),65.5,-29.5,-32.5,-26.4,2e1807d8-cb8c-412d-965c-4adceaf5be4e
+SigLIP 2 So400m/16,clean,95.2,0.0,0.0,0.0,626e2a34-cc71-46a8-aeee-54ff3064f18f
+SigLIP 2 So400m/16,sink killed,93.4,-1.8,-2.9,-0.7,626e2a34-cc71-46a8-aeee-54ff3064f18f
+SigLIP 2 So400m/16,"key/value restored, block 0",95.1,-0.1,-1.0,0.8,626e2a34-cc71-46a8-aeee-54ff3064f18f
+SigLIP 2 So400m/16,"key/value restored, all blocks",95.2,0.0,0.0,0.0,626e2a34-cc71-46a8-aeee-54ff3064f18f
+SigLIP 2 So400m/16,query restored (control),92.8,-2.4,-3.7,-1.2,626e2a34-cc71-46a8-aeee-54ff3064f18f
+AIMv2 L/14,killed + constant token,94.9,-0.1,-0.6,0.4,2db55c09-0d1f-4a31-a7c8-691f14a85f51
+SigLIP 2 So400m/16,killed + constant token,94.6,-0.6,-1.5,0.3,2db55c09-0d1f-4a31-a7c8-691f14a85f51
