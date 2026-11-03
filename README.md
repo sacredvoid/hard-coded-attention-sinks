@@ -16,6 +16,12 @@ This repo shows a third kind that hadn't been mapped. In **AIMv2** (every size) 
 All experiments are on frozen, public checkpoints (via `timm` and `transformers`), run on single Modal GPUs (T4/A10G) for about $16 in total.
 
 
+## What it looks like
+
+![Sink maps on real photos](report/figures/sink-maps.jpg)
+
+*Each patch coloured by its norm relative to the image's median patch (patches under 2x left uncoloured), on the same photo crop for every model. OpenAI CLIP and DINOv2 put their high-norm sink on a different patch in each photo. DINOv3 has none on the grid (its sink is a register token). AIMv2 always uses the top-left patch at ~230x, and SigLIP 2 So400m always uses patch (11,0) at ~75x. Swap that patch's position embedding with patch (8,8)'s and the sink moves to (8,8) in every photo, same strength. Photos: Imagenette (an ImageNet subset). Data: [run FIG](experiments/29-FIG-sink-maps-on-photos).*
+
 ## Main findings
 
 ![Sink mechanism](report/figures/sink-mechanism.svg)
